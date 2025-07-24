@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+/* Reset e configurações base */
+      :root {
+        --primary-color: #d33bf0;
+        --secondary-color: #b62fc7;
+        --accent-color: #c15cde;
+        --light-color: #f8f9fa;
+        --dark-color: #212529;
+        --success-color: #c58aeb;
+        --warning-color: #8d5a3c;
+        --danger-color: #f94144;
+        --border-radius: 8px;
+        --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        line-height: 1.6;
+        color: var(--dark-color);
+        background-color: #f5f7fa;
+        padding: 20px;
+      }
+
+      /* mark (textos grifados) */
+      mark {
+        background-color: #c48aeb8e;
+        padding: 2px 4px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      /* Container principal */
+      .resumo-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow);
+      }
+
+      /* Cabeçalho */
+      .resumo-header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid var(--primary-color);
+      }
+
+      .resumo-header h1 {
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+
+      .resumo-header p {
+        color: #6c757d;
+        font-size: 1.1rem;
+      }
+
+      /* Seções de conteúdo */
+      .resumo-section {
+        margin-bottom: 40px;
+        padding: 20px;
+        background-color: white;
+        border-radius: var(--border-radius);
+        box-shadow: var(--shadow);
+        transition: transform 0.3s ease;
+      }
+
+      .resumo-section:hover {
+        transform: translateY(-5px);
+      }
+
+      .resumo-section h2 {
+        color: var(--secondary-color);
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #e9ecef;
+      }
+
+      .resumo-section h3 {
+        color: var(--accent-color);
+        margin: 15px 0 10px;
+      }
+
+      .resumo-section p {
+        margin-bottom: 15px;
+        text-align: justify;
+      }
+
+      /* Listas */
+      .resumo-section ul,
+      .resumo-section ol {
+        margin-left: 20px;
+        margin-bottom: 15px;
+      }
+
+      .resumo-section li {
+        margin-bottom: 8px;
+      }
+
+      /* Destaques */
+      .destaque {
+        background-color: rgba(193, 92, 222, 0.1);
+        border-left: 4px solid var(--accent-color);
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 0 var(--border-radius) var(--border-radius) 0;
+      }
+
+      .destaque-importante {
+        background-color: rgba(141, 90, 60, 0.1);
+        border-left: 4px solid var(--warning-color);
+      }
+
+      .destaque-perigo {
+        background-color: rgba(249, 65, 68, 0.1);
+        border-left: 4px solid var(--danger-color);
+      }
+
+      /* Blocos de código */
+      .bloco-codigo {
+        background-color: #2b2b2b;
+        color: #f8f8f2;
+        padding: 15px;
+        border-radius: var(--border-radius);
+        font-family: 'Courier New', Courier, monospace;
+        margin: 15px 0;
+        overflow-x: auto;
+      }
+
+      /* Tabelas */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+      }
+
+      th, td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: var(--primary-color);
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      /* Rodapé */
+      .resumo-footer {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #e9ecef;
+        color: #6c757d;
+      }
+
+      /* Responsividade */
+      @media (max-width: 768px) {
+        body {
+          padding: 10px;
+        }
+
+        .resumo-container {
+          padding: 15px;
+        }
+
+        .resumo-header h1 {
+          font-size: 2rem;
+        }
+
+        .resumo-section {
+          padding: 15px;
+        }
+
+        th, td {
+          padding: 8px 10px;
+        }
+      }

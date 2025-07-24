@@ -25,6 +25,7 @@ console.log("Underfined: ", endereco);
 
 
 // 5. Null
+// indica a ausência intencional do valor da variável
 let salario = null;
 console.log("Null: ", salario);
 

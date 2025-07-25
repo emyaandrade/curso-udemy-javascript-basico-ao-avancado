@@ -11,11 +11,13 @@ Passos:
  Use console.log() para imprimir uma mensagem contendo todas as informações coletadas.
 */
 
-// const { resolve } = require('path');
+
 const readline = require('readline');
 
 const lerRespostaUsuario = readline.createInterface({
+    // Configura a fonte de entrada de dados como o stdin (standard input), permitindo que o programa leia dados inseridos pelo usuário no terminal.
     input: process.stdin,
+    // Configura o destino de saída de dados como o stdout (standard output), permitindo que o programa escreva dados no terminal.
     output: process.stdout,
 });
 

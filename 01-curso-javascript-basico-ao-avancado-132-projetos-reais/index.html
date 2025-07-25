@@ -17,12 +17,14 @@
         </header>
 
         <section class="resumo-section">
-<!-- Resumo 1 - Tipos de dados -->
+            <!-- Resumo 1 - Tipos de dados -->
             <h2>Aula 1: O que é Tipos de Dados?</h2>
-            <p>Essencialmente, o JavaScript é uma linguagem de tipagem dinâmica, o que significa que não é necessário declarar o tipo de uma variável quando ela é criada. No entanto, entender os diferentes tipos de dados é crucial para programar eficazmente e evitar erros comuns.</p>
+            <p>Essencialmente, o JavaScript é uma linguagem de tipagem dinâmica, o que significa que não é necessário
+                declarar o tipo de uma variável quando ela é criada. No entanto, entender os diferentes tipos de dados é
+                crucial para programar eficazmente e evitar erros comuns.</p>
 
             <h3>Tipos Primitivos</h3>
-<!-- Number -->
+            <!-- Number -->
             <p><mark>Number:</mark> Representa tanto inteiros quanto números de ponto flutuante.</p>
             <div class="bloco-codigo">
                 <pre>
@@ -30,8 +32,9 @@
                     let pi = 3.14159;  //ponto flutuante
                 </pre>
             </div>
-<!-- Strings -->
-            <p><mark>Strings:</mark> Usado para representar dados textuais. Pode ser criada usando aspas simples, duplas ou crases.</p>
+            <!-- Strings -->
+            <p><mark>Strings:</mark> Usado para representar dados textuais. Pode ser criada usando aspas simples, duplas
+                ou crases.</p>
             <div class="bloco-codigo">
                 <pre>
                     let saudacao = "Olá, mundo!";
@@ -39,15 +42,16 @@
                     let texto = `O valor é ${numero}`;
                 </pre>
             </div>
-<!-- boolean -->
-            <p><mark>Boolean:</mark> True e False. O tipo booleano só tem dois valores possíveis (verdadeiro e falso). É frequentemente usado em testes lógicos.</p>
+            <!-- boolean -->
+            <p><mark>Boolean:</mark> True e False. O tipo booleano só tem dois valores possíveis (verdadeiro e falso). É
+                frequentemente usado em testes lógicos.</p>
             <div class="bloco-codigo">
                 <pre>
                     let maiorIdade = true;
                     let menorIdade = false;
                 </pre>
             </div>
-<!-- undefined -->
+            <!-- undefined -->
             <p><mark>Undefined:</mark> Uma variável que não teve um valor atribuído a ela é do tipo undefined.</p>
             <div class="bloco-codigo">
                 <pre>
@@ -55,13 +59,15 @@
                     console.log(naoDefinido);  //undefined
                 </pre>
             </div>
-<!-- null -->
-            <p><mark>Null:</mark> um tipo que tem apenas um valor, null. Ele é usado para indicar a ausência deliberada de valor.</p>
+            <!-- null -->
+            <p><mark>Null:</mark> um tipo que tem apenas um valor, null. Ele é usado para indicar a ausência deliberada
+                de valor.</p>
             <div class="bloco-codigo">
                 <pre>let vazio = null;</pre>
             </div>
-<!-- Symbol -->
-            <p><mark>Symbol:</mark> é usado para criar identificadores unicos para propriedades e objetos. Cada símbolo é único.</p>
+            <!-- Symbol -->
+            <p><mark>Symbol:</mark> é usado para criar identificadores unicos para propriedades e objetos. Cada símbolo
+                é único.</p>
             <div class="bloco-codigo">
                 <pre>
                     let simbolo1 = Symbol("id");
@@ -69,28 +75,36 @@
                     console.log(simbolo1 === simbolo2);   //false
                 </pre>
             </div>
-<!-- BigInt -->
-            <p><mark>BigInt:</mark> é usado para representar números inteiros muito grandes que ultrapassam o limite seguro para o tipo <strong>Number</strong>. São escritos com um "n" no final para diferenciá-los do Number.</p>
+            <!-- BigInt -->
+            <p><mark>BigInt:</mark> é usado para representar números inteiros muito grandes que ultrapassam o limite
+                seguro para o tipo <strong>Number</strong>. São escritos com um "n" no final para diferenciá-los do
+                Number.</p>
             <div class="bloco-codigo">
                 let grandeNumero = 123456789123456789123456789123456789n;
             </div>
-<!-- Destaque -->
+            <!-- Destaque -->
             <div class="destaque">
-                <p><strong>Importante:</strong> Compreender esses tipos é fundamental para o controle eficaz do comportamento do programa e para evitar erros comuns de tipo, especialmente em uma linguagem de tipagem dinâmica como JavaScript.</p>
+                <p><strong>Importante:</strong> Compreender esses tipos é fundamental para o controle eficaz do
+                    comportamento do programa e para evitar erros comuns de tipo, especialmente em uma linguagem de
+                    tipagem dinâmica como JavaScript.</p>
             </div>
         </section>
 
         <section class="resumo-section">
             <h2>Aula 2: O que é Var, Let e Const?</h2>
-            <p>São declarações usadas para definir variáveis. Cada uma tem características e escopos diferentes que influenciam como valores são armazenados, acessados e modificados. A escolha entre eles afeta a manutenibilidade e o comportamento do código.</p>
-<!-- var -->
+            <p>São declarações usadas para definir variáveis. Cada uma tem características e escopos diferentes que
+                influenciam como valores são armazenados, acessados e modificados. A escolha entre eles afeta a
+                manutenibilidade e o comportamento do código.</p>
+            <!-- var -->
             <h3>Var</h3>
             <ul><strong>Definição e Características:</strong>
                 <li>
-                    É a forma mais antiga de declarar variáveis em JavaScript. As variáveis declaradas com <strong>var</strong> têm escopo de função ou são globais se declaradas fora de qualquer função.
+                    É a forma mais antiga de declarar variáveis em JavaScript. As variáveis declaradas com
+                    <strong>var</strong> têm escopo de função ou são globais se declaradas fora de qualquer função.
                 </li>
                 <li>
-                    Sofrem hoisting, o que significa que são movidas para o topo de seu escopo funcional ou global, sendo inicializadas com <strong>undefined</strong> antes de sua declaração ser executada.
+                    Sofrem hoisting, o que significa que são movidas para o topo de seu escopo funcional ou global,
+                    sendo inicializadas com <strong>undefined</strong> antes de sua declaração ser executada.
                 </li>
             </ul>
             <p><strong>Exemplo:</strong></p>
@@ -102,18 +116,22 @@
                 </pre>
             </div>
             <ul><strong>Uso:</strong>
-            <li>
-                Devido aos problemas com escopo e hoisting, o uso de <strong>var</strong> é frequentemente desaconselhado em favor de <strong>let</strong> e <strong>const</strong>, que oferecem controle de escopo mais previsível.
-            </li>
+                <li>
+                    Devido aos problemas com escopo e hoisting, o uso de <strong>var</strong> é frequentemente
+                    desaconselhado em favor de <strong>let</strong> e <strong>const</strong>, que oferecem controle de
+                    escopo mais previsível.
+                </li>
             </ul>
-<!-- let -->
+            <!-- let -->
             <h3>Let</h3>
             <ul><strong>Definição e Características:</strong>
                 <li>
-                    Permite declarar variáveis com escopo de bloco, o que significa que a variável só existe dentro do bloco <strong>{}</strong> onde foi declarada.
+                    Permite declarar variáveis com escopo de bloco, o que significa que a variável só existe dentro do
+                    bloco <strong>{}</strong> onde foi declarada.
                 </li>
                 <li>
-                    Não sofrem hoisting de uma forma que possam ser acessadas antes da declaração. A tentativa de usá-las antes da declaração resulta em um <strong>ReferenceError</strong>.
+                    Não sofrem hoisting de uma forma que possam ser acessadas antes da declaração. A tentativa de
+                    usá-las antes da declaração resulta em um <strong>ReferenceError</strong>.
                 </li>
             </ul>
             <p><strong>Exemplo:</strong></p>
@@ -127,20 +145,24 @@
             </div>
             <ul><strong>Uso:</strong>
                 <li>
-                    let é preferido para declarar variáveis em blocos de código específicos, especialmente em loops e condições, onde o controle de escopo é restrito e benéfico.
+                    let é preferido para declarar variáveis em blocos de código específicos, especialmente em loops e
+                    condições, onde o controle de escopo é restrito e benéfico.
                 </li>
             </ul>
-<!-- Const -->
+            <!-- Const -->
             <h3>Const</h3>
             <ul><strong>Definição e Características:</strong>
                 <li>
                     Assim como let, a const tem escopo de bloco.
                 </li>
                 <li>
-                    As variáveis declaradas com <strong>const</strong> devem ser inicializadas na declaração e não podem ser reatribuídas após sua inicialização. No entando, se o valor for um objeto, suas propriedades podem ser modificadas.
+                    As variáveis declaradas com <strong>const</strong> devem ser inicializadas na declaração e não podem
+                    ser reatribuídas após sua inicialização. No entando, se o valor for um objeto, suas propriedades
+                    podem ser modificadas.
                 </li>
                 <li>
-                    Assim como let, tentar acessar uma const antes de sua declaração resultará em <strong>ReferenceError</strong>.
+                    Assim como let, tentar acessar uma const antes de sua declaração resultará em
+                    <strong>ReferenceError</strong>.
                 </li>
             </ul>
             <p><strong>Exemplo:</strong></p>
@@ -155,19 +177,25 @@
                 </pre>
             </div>
             <ul><strong>Uso:</strong>
-                <li>const é ideal para declarar constantes cujo valor não deve mudar e também para garantir que objetos e arrays declarados não sejam completamente reatribuídos, proporcionando um nível de proteção adicional ao seu código.</li>
+                <li>const é ideal para declarar constantes cujo valor não deve mudar e também para garantir que objetos
+                    e arrays declarados não sejam completamente reatribuídos, proporcionando um nível de proteção
+                    adicional ao seu código.</li>
             </ul>
             <div class="destaque">
-                <p><strong>Conclusão:</strong> A escolha entre <strong>var</strong>, <strong>let</strong> e <strong>const</strong> depende do contexto de uso:</p>
+                <p><strong>Conclusão:</strong> A escolha entre <strong>var</strong>, <strong>let</strong> e
+                    <strong>const</strong> depende do contexto de uso:</p>
                 <ul>
                     <li>
-                        Use <strong>var</strong> em situações em que precisar de compatibilidade com código JavaScript muito antigo, mas geralmente evite-a devido ao seu escopo funcional amplo e hoisting.
+                        Use <strong>var</strong> em situações em que precisar de compatibilidade com código JavaScript
+                        muito antigo, mas geralmente evite-a devido ao seu escopo funcional amplo e hoisting.
                     </li>
                     <li>
-                        Use <strong>let</strong> quando precisar de variáveis com escopo limitado a blocos, especialmente útil em loops e condições.
+                        Use <strong>let</strong> quando precisar de variáveis com escopo limitado a blocos,
+                        especialmente útil em loops e condições.
                     </li>
                     <li>
-                        Use <strong>const</strong> quando quiser garantir que o valor da variável não seja alterado após sua inicialização, o que é útil para manter a constância e a segurança em seu código.
+                        Use <strong>const</strong> quando quiser garantir que o valor da variável não seja alterado após
+                        sua inicialização, o que é útil para manter a constância e a segurança em seu código.
                     </li>
                 </ul>
             </div>
@@ -175,77 +203,271 @@
 
         <section class="resumo-section">
             <h2>Aula 3: Entrada de Dados</h2>
-            <p>Os exemplos da aula passada demonstram como interagir com o usuário através do terminal usando o módulo <strong>readline</strong> do <mark>Node.js</mark>, capturando entrada de dados de maneira síncrona e assíncrona. Vamos detalhar os exemplos e explicar a importância das técnicas utilizadas.</p>
+            <p>Os exemplos da aula passada demonstram como interagir com o usuário através do terminal usando o módulo
+                <strong>readline</strong> do <mark>Node.js</mark>, capturando entrada de dados de maneira síncrona e
+                assíncrona. Vamos detalhar os exemplos e explicar a importância das técnicas utilizadas.</p>
             <!-- entrada básica de dados -->
-             <h3>Primeiro Exemplo da aula: Entrada básica de dados</h3>
-             <p>Este exemplo ilustra o processo básico de interação com o usuário por meio do terminal, fazendo uma pergunta simples e recebendo a resposta.</p>
-             <ol>
+            <h3>Primeiro Exemplo da aula: Entrada básica de dados</h3>
+            <p>Este exemplo ilustra o processo básico de interação com o usuário por meio do terminal, fazendo uma
+                pergunta simples e recebendo a resposta.</p>
+            <ol>
                 <li>
                     <strong>Importação e Configuração:</strong>
                     <ul>
-                        <li><strong>Importação do módulo readline:</strong> Utilizado para ler a entrada do usuário no terminal. Isso é feito através da função <strong>require</strong>, que importa módulos disponíveis no Node.js.</li>
-                        <li><strong>Criação da Interface:</strong> A interface de <strong>readline</strong> é criada com <strong>readline.createInterface</strong>, configurada para usar os streams padrão de entrada (<strong>process.stdin</strong>) e saída (<strong>process.stdout</strong>). Isso permite que o programa leia a entrada do teclado e escreva no terminal.</li>
+                        <li><strong>Importação do módulo readline:</strong> Utilizado para ler a entrada do usuário no
+                            terminal. Isso é feito através da função <strong>require</strong>, que importa módulos
+                            disponíveis no Node.js.</li>
+                        <li><strong>Criação da Interface:</strong> A interface de <strong>readline</strong> é criada com
+                            <strong>readline.createInterface</strong>, configurada para usar os streams padrão de
+                            entrada (<strong>process.stdin</strong>) e saída (<strong>process.stdout</strong>). Isso
+                            permite que o programa leia a entrada do teclado e escreva no terminal.</li>
                     </ul>
                 </li>
                 <li>
                     <strong>Leitura de Entrada:</strong>
                     <ul>
-                        <li><strong>Método question:</strong> Utilizado para fazer uma pergunta ao usuário. Este método aceita uma string de pergunta e uma função callback, que será executada quando o usuário fornecer uma resposta.</li>
+                        <li><strong>Método question:</strong> Utilizado para fazer uma pergunta ao usuário. Este método
+                            aceita uma string de pergunta e uma função callback, que será executada quando o usuário
+                            fornecer uma resposta.</li>
                     </ul>
                 </li>
                 <li>
                     <strong>Tratamento de Resposta e Encerramento:</strong>
                     <ul>
-                        <li><strong>Função Callback:</strong> Recebe a resposta do usuário e a utiliza para exibir uma mensagem personalizada.</li>
-                        <li><strong>Fechamento da Interface:</strong> Essencial para encerrar o programa corretamente, evitando que fique pendente indefinidamente.</li>
+                        <li><strong>Função Callback:</strong> Recebe a resposta do usuário e a utiliza para exibir uma
+                            mensagem personalizada.</li>
+                        <li><strong>Fechamento da Interface:</strong> Essencial para encerrar o programa corretamente,
+                            evitando que fique pendente indefinidamente.</li>
                     </ul>
                 </li>
-             </ol>
-             <ul>
+            </ol>
+            <ul>
                 <mark>Por que usar essas técnicas?</mark>
-                <li><strong>Modularidade:</strong> O uso de módulos como readline facilita a organização do código e reuso de funcionalidades comuns.</li>
-                <li><strong>Assincronia:</strong> O método question é assíncrono, permitindo que o programa execute outras tarefas enquanto espera pela entrada do usuário.</li>
-                <li><strong>Manutenção do Estado do Programa:</strong> Fechar a interface de readline após o uso é crucial para liberar recursos e permitir que o programa termine sua execução naturalmente.</li>
-             </ul>
-             <!-- Entrevista assíncrona com Promises -->
-              <h3>Segundo Exemplo: Entrevista Assíncrona com Promises</h3>
-              <p>Este exemplo avança na complexidade, usando <strong>Promises</strong> para gerenciar múltiplas entradas de forma assíncrona.</p>
-              <ol>
+                <li><strong>Modularidade:</strong> O uso de módulos como readline facilita a organização do código e
+                    reuso de funcionalidades comuns.</li>
+                <li><strong>Assincronia:</strong> O método question é assíncrono, permitindo que o programa execute
+                    outras tarefas enquanto espera pela entrada do usuário.</li>
+                <li><strong>Manutenção do Estado do Programa:</strong> Fechar a interface de readline após o uso é
+                    crucial para liberar recursos e permitir que o programa termine sua execução naturalmente.</li>
+            </ul>
+            <!-- Entrevista assíncrona com Promises -->
+            <h3>Segundo Exemplo: Entrevista Assíncrona com Promises</h3>
+            <p>Este exemplo avança na complexidade, usando <strong>Promises</strong> para gerenciar múltiplas entradas
+                de forma assíncrona.</p>
+            <ol>
                 <li>
                     <strong>Configuração Inicial:</strong>
                     <ul>
-                        <li>Semelhante ao primeiro exemplo, inclui a importação do módulo <strong>readline</strong> e a configuração da interface.</li>
+                        <li>Semelhante ao primeiro exemplo, inclui a importação do módulo <strong>readline</strong> e a
+                            configuração da interface.</li>
                     </ul>
                 </li>
                 <li>
                     <strong>Função Assíncrona com Promises:</strong>
                     <ul>
-                        <li><strong>Definição de fazerPergunta:</strong> Função que encapsula <strong>rl.question</strong> em uma <strong>Promise</strong>, permitindo que seja usada com <strong>await</strong> para uma sequência de perguntas de maneira mais legível e gerenciável.</li>
-                        <li><strong>Resolução de Promises:</strong> Quando o usuário responde, a Promise é resolvida com a resposta, que pode então ser manipulada de maneira síncrona no fluxo do código.</li>
+                        <li><strong>Definição de fazerPergunta:</strong> Função que encapsula
+                            <strong>rl.question</strong> em uma <strong>Promise</strong>, permitindo que seja usada com
+                            <strong>await</strong> para uma sequência de perguntas de maneira mais legível e
+                            gerenciável.</li>
+                        <li><strong>Resolução de Promises:</strong> Quando o usuário responde, a Promise é resolvida com
+                            a resposta, que pode então ser manipulada de maneira síncrona no fluxo do código.</li>
                     </ul>
                 </li>
                 <li>
                     <strong>Coleta e Exibição de Respostas:</strong>
                     <ul>
-                        <li><strong>Função coletarRespostas:</strong> Utiliza <strong>await</strong> para pausar a execução do programa enquanto espera pelas respostas, criando um fluxo de execução claro e linear, apesar da natureza assíncrona das operações.</li>
-                        <li><strong>Exibição e Encerramento:</strong> As respostas são coletadas e exibidas em uma mensagem formatada, e a interface é fechada.</li>
+                        <li><strong>Função coletarRespostas:</strong> Utiliza <strong>await</strong> para pausar a
+                            execução do programa enquanto espera pelas respostas, criando um fluxo de execução claro e
+                            linear, apesar da natureza assíncrona das operações.</li>
+                        <li><strong>Exibição e Encerramento:</strong> As respostas são coletadas e exibidas em uma
+                            mensagem formatada, e a interface é fechada.</li>
                     </ul>
                 </li>
-              </ol>
-              <ul>
+            </ol>
+            <ul>
                 <mark>Por que usar essas técnicas?</mark>
-                <li><strong>Melhoria na Legibilidade:</strong> O uso de <strong>async/await</strong> com <strong>Promises</strong> torna o código assíncrono mais fácil de escrever e entender, comparado ao uso de callbacks aninhados.</li>
-                <li><strong>Gerenciamento Eficiente de Fluxo Assíncrono:</strong> Permite a execução de várias operações assíncronas em uma sequência definida, sem bloquear o thread principal do Node.js.</li>
-                <li><strong>Flexibilidade e Robustez:</strong> A abordagem com <strong>Promises</strong> e <strong>async/await</strong> fornece um controle robusto sobre o fluxo assíncrono, facilitando o tratamento de erros e a sincronização de processos dependentes.</li>
-              </ul>
-              <div class="destaque">
-                <p>Ambos os exemplos demonstram práticas eficazes para a interação do usuário em aplicações Node.js, utilizando o módulo readline para capturar e manipular a entrada do usuário de forma síncrona e assíncrona, destacando a flexibilidade do JavaScript para lidar com diferentes padrões de entrada.</p>
-              </div>
-
-
+                <li><strong>Melhoria na Legibilidade:</strong> O uso de <strong>async/await</strong> com
+                    <strong>Promises</strong> torna o código assíncrono mais fácil de escrever e entender, comparado ao
+                    uso de callbacks aninhados.</li>
+                <li><strong>Gerenciamento Eficiente de Fluxo Assíncrono:</strong> Permite a execução de várias operações
+                    assíncronas em uma sequência definida, sem bloquear o thread principal do Node.js.</li>
+                <li><strong>Flexibilidade e Robustez:</strong> A abordagem com <strong>Promises</strong> e
+                    <strong>async/await</strong> fornece um controle robusto sobre o fluxo assíncrono, facilitando o
+                    tratamento de erros e a sincronização de processos dependentes.</li>
+            </ul>
+            <div class="destaque">
+                <p>Ambos os exemplos demonstram práticas eficazes para a interação do usuário em aplicações Node.js,
+                    utilizando o módulo readline para capturar e manipular a entrada do usuário de forma síncrona e
+                    assíncrona, destacando a flexibilidade do JavaScript para lidar com diferentes padrões de entrada.
+                </p>
+            </div>
         </section>
 
-            
+        <!-- O que é if? -->
+        <section class="resumo-section">
+            <h2>O que é IF?</h2>
+            <p>O <strong>if</strong> é uma das estruturas de controle de fluxo mais fundamentais em JavaScript,
+                utilizada para executar blocos de código condicionalmente. Essa instrução verifica uma condição e, se a
+                condição for verdadeira (<strong>true</strong>), executa um bloco de código. É uma ferramenta essencial
+                para tomada de decisões no código, permitindo que os programas respondam a diferentes situações de
+                maneiras diferentes.</p>
+            <h3>Estrutura do if</h3>
+            <p>A sintaxe básica do <strong>if</strong> em JavaScript é:</p>
+            <div class="bloco-codigo">
+                <pre>
+            if (condicao) {
+                // Bloco de código que é executado se a condição for verdadeira
+            }
+                </pre>
+            </div>
+            <ul>
+                <li>
+                    <strong>Condição:</strong> Uma expressão que é avaliada antes da execução do bloco de código. Se a
+                    condição for avaliada como verdadeira (<strong>true</strong>), o bloco de código dentro do
+                    <strong>if</strong> é executado.
+                </li>
+            </ul>
+            <p>Além disso, o <strong>if</strong> pode ser expandido com um <strong>else</strong> para lidar com a
+                situação em que a condição é falsa:</p>
+            <div class="bloco-codigo">
+                <pre>
+            if (condicao) {
+                // Bloco de código que é executado se a condição for verdadeira
+            } else {
+                // Bloco de código que é executado se a condição for falsa
+            }
+                </pre>
+            </div>
+            <p>Para múltiplas condições, você pode encadear várias instruções <strong>if</strong> usando <strong>else
+                    if</strong>:</p>
+            <div class="bloco-codigo">
+                <pre>
+            if (condicao1) {
+                // Executa se condição1 for verdadeira
+            } else if (condicao2) {
+                // Executa se condição1 for falsa e condição2 for verdadeira
+            } else {
+                // Executa se condição1 e condição2 forem falsas
+            }
+                </pre>
+            </div>
+            <!-- pra que serve o if? -->
+            <h3>Para que serve o if?</h3>
+            <ul>O comando if é usado para:
+                <li><strong>Execução condicional de código:</strong> Executar diferentes blocos de código com base em
+                    diferentes condições.</li>
+                <li><strong>Controle de fluxo do programa:</strong> Direcionar o fluxo do programa dependendo de estados
+                    ou valores variáveis, o que é essencial em quase todos os programas não triviais.</li>
+            </ul>
+            <!-- quando usar o if -->
+            <h3>Quando usar o if?</h3>
+            <ul>O if deve ser usado quando:
+                <li><strong>Você precisa tomar decisões no código baseadas em condições.</strong> Por exemplo, verificar se um usuário está logado para permitir acesso a uma parte do site.</li>
+                <li><strong>Há necessidade de executar diferentes ações para diferentes valores de uma variável.</strong> Por exemplo, calcular descontos baseados em diferentes faixas de quantidade comprada.</li>
+                <li><strong>Você quer verificar a validade dos dados.</strong> Por exemplo, garantir que um número inserido em um formulário não seja negativo.</li>
+            </ul>
+            <p><mark>Exemplo prático:</mark></p>
+            <p>Aqui está um exemplo prático de como usar o <strong>if</strong> para fazer decisões simples baseadas na idade de um usuário:</p>
+            <div class="bloco-codigo">
+                <pre>
+            let idade = 18;
+ 
+            if (idade < 18) {
+                console.log("Você é menor de idade.");
+            } else if (idade >= 18 && idade < 65) {
+                console.log("Você é adulto.");
+            } else {
+                console.log("Você é idoso.");
+            }
+                </pre>
+            </div>
+            <p>Esse código verifica a idade e imprime uma mensagem adequada baseada na faixa etária.</p>
+            <div class="destaque">
+                <p><strong>Conclusão:</strong></p>
+                <p>A instrução if é uma ferramenta crucial em JavaScript para realizar a lógica condicional, permitindo que programas tomem decisões e executem ações baseadas em diferentes condições. Sua flexibilidade para integrar com else e else if oferece uma maneira robusta e legível de lidar com múltiplas condições, tornando-a indispensável em qualquer código JavaScript.</p>
+            </div>
+        </section>
+
+        <!-- Resumo Aula Condicionais If com Operadores -->
+        <section class="resumo-section">
+            <h2>Resumo Aula Condicionais If com Operadores</h2>
+            <p>A aula passada ilustra a utilização do comando <strong>if</strong> em JavaScript para realizar diversas comparações utilizando operadores relacionais e lógicos. Cada bloco de código demonstra como esses operadores podem ser aplicados para controlar o fluxo de execução com base nas condições fornecidas. Vamos explorar cada exemplo detalhadamente e entender a importância desses operadores.</p>
+            <!-- Operadores Relacionais -->
+            <h3>Operadores Relacionais</h3>
+            <ol>
+                <li>
+                    <strong>Maior que (>):</strong>
+                    <ul>
+                        <li><strong>Exemplo:</strong> Verifica se numero é maior que 5.</li>
+                        <li><strong>Utilidade:</strong> Comumente usado para comparar valores numéricos, como idades, pontuações, ou limites de condição.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Menor que (<):</strong>
+                    <ul>
+                        <li><strong>Exemplo:</strong> Determina se idade é menor que 18.</li>
+                        <li><strong>Utilidade:</strong> Ideal para condições de limite, como verificar se alguém é menor de idade.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Maior ou igual a (>=):</strong>
+                    <ul>
+                        <li><strong>Exemplo:</strong> Checa se saldo é positivo ou zero.</li>
+                        <li><strong>Utilidade:</strong> Útil em casos onde o limite inferior de um valor é aceitável, como saldo de conta ou pontuação mínima.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Menor ou igual a (<=):</strong>
+                    <ul>
+                        <li><strong>Exemplo:</strong> Avalia se temperatura é menor ou igual a zero.</li>
+                        <li><strong>Utilidade:</strong> Frequentemente usado para condições meteorológicas ou valores que não devem exceder um certo ponto.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Igual a (===):</strong>
+                    <ul>
+                        <li><strong>Exemplo:</strong> Verifica se cor é exatamente "vermelho".</li>
+                        <li><strong>Utilidade:</strong> Importante para comparações precisas, incluindo tipo e valor, garantindo exatidão sem coerções de tipo.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Diferente de (!==):</strong>
+                    <ul>
+                        <li><strong>Exemplo:</strong> Verifica se diaSemana não é "domingo".</li>
+                        <li><strong>Utilidade:</strong> Usado para excluir uma condição específica enquanto permite todas as outras possibilidades.</li>
+                    </ul>
+                </li>
+            </ol>
+            <!-- Operadores Lógicos -->
+            <h3>Operadores Lógicos</h3>
+            <ol>
+                <li>
+                    <strong>E (&&):</strong>
+                    <ul>
+                        <li><strong>Exemplo:</strong> Checa se a pessoa é maior de idade e possui carteira de motorista.</li>
+                        <li><strong>Exemplo:</strong> Combina múltiplas condições que precisam ser verdadeiras simultaneamente, ideal para regras que exigem a satisfação de todos os critérios.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>OU (||):</strong>
+                    <ul>
+                        <li><strong>Exemplo:</strong> Determina se é fim de semana, checando se o dia é sábado ou domingo.</li>
+                        <li><strong>Exemplo:</strong> Usado quando qualquer uma das condições pode ser verdadeira para executar o bloco de código, aplicável em casos de múltiplas possibilidades aceitáveis.</li>
+                    </ul>
+                </li>
+            </ol>
+            <h3>Por que usar essas técnicas?</h3>
+            <ul>
+                <li><strong>Controle de Fluxo:</strong> O comando if e os operadores relacionais/lógicos são fundamentais para controlar o fluxo de execução em programas, permitindo que o código responda de maneira dinâmica a diferentes condições e estados.</li>
+                <li><strong>Segurança e Precisão:</strong> Operadores como === e !== oferecem uma forma segura e precisa de comparação, essenciais em linguagens com tipagem fraca como JavaScript, onde conversões automáticas de tipo podem levar a resultados inesperados.</li>
+                <li><strong>Simplicidade e Legibilidade:</strong> O uso de operadores lógicos como && e || simplifica o código, permitindo a combinação de múltiplas condições de forma clara e legível, melhorando a manutenção e compreensão do código.</li>
+            </ul>
+            <div class="destaque">
+                <p>Esses operadores e técnicas são essenciais no desenvolvimento de qualquer aplicativo que requer lógica condicional, desde simples validações de formulário até sistemas complexos de decisão e controle de processos.</p>
+            </div>
+        </section>
+
+
         <section class="resumo-section">
             <div class="destaque-importante">
                 <p><strong>Atenção:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor,

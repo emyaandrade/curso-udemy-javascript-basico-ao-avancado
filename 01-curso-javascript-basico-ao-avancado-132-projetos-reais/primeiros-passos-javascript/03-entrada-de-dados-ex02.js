@@ -23,7 +23,7 @@ function fazerPergunta(pergunta){
     // A função retorna uma nova Promise. A Promise recebe uma função como argumento, essa função é chamada de executor.
     // O executor é chamado imediatamente pela implementação da Promise, passando duas funções: 'resolve' e 'reject'.
     // 'resolve' é uma função que, quando chamada, resolve a Promise com um valor dado.
-    // 'reject' é usada para rejeitar a Promise com um
+    // 'reject' é usada para rejeitar a Promise
     return new Promise((resolve) => {
 
         r1.question(pergunta, (resposta) => {

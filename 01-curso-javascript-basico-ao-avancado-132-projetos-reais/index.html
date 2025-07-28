@@ -577,6 +577,125 @@
         </section>
 
         <section class="resumo-section">
+            <!-- O que é For? -->
+            <h2>Aula 6: O que é For?</h2>
+            <p>O <mark>for</mark> é uma das estruturas de <strong>controle de loop</strong> mais fundamentais em JavaScript, usada para repetir um bloco de código um número determinado de vezes. Este loop é especialmente útil quando você sabe antecipadamente quantas vezes deseja que o bloco de código seja executado, como ao iterar sobre elementos de um array ou executando uma operação repetida um número fixo de vezes.</p>
+            <!-- Estrutura do for -->
+            <h3>Estrutura do for</h3>
+            <p>A sintaxe básica do loop for em JavaScript é a seguinte:</p>
+            <div class="bloco-codigo">
+                <pre>
+                    for (inicialização; condição; incremento) {
+                        // Bloco de código a ser executado em cada iteração
+                    }
+                </pre>
+            </div>
+            <ul>
+                <li><strong>Inicialização: </strong>Geralmente usada para definir e configurar a variável do contador. É executada uma vez antes do loop começar.</li>
+                <li><strong>Condição: </strong>Uma expressão avaliada antes de cada iteração do loop. Se for verdadeira (true), o bloco de código dentro do loop é executado. Se for falsa (false), o loop termina.</li>
+                <li><strong>Incremento: </strong>Executado após cada iteração do bloco de código. Frequentemente usado para atualizar o contador.</li>
+            </ul>
+            <h3>Para que serve o for?</h3>
+            <ol>O loop for serve para várias finalidades em programação:
+                <li><strong>Iteração sobre arrays: </strong>Uma das utilizações mais comuns do for é para iterar sobre elementos de um array, permitindo acessar ou modificar cada elemento.</li>
+                <li><strong>Repetição controlada de operações: </strong>Quando um determinado bloco de código precisa ser executado repetidamente por um número específico de vezes, o for é uma solução ideal.</li>
+                <li><strong>Implementação de algoritmos que requerem repetição: </strong>Muitos algoritmos, especialmente em matemática e processamento de dados, necessitam de repetições controladas que são naturalmente implementadas com um loop for.</li>
+            </ol>
+            <h3>Quando usar o for?</h3>
+            <ol>Você deve usar o loop for quando:
+                <li><strong>O número de iterações é conhecido antecipadamente: </strong>Se você sabe quantas vezes o loop deve rodar, seja por um número fixo ou por um tamanho de array, o for é a escolha certa.</li>
+                <li><strong>Necessita de controle sobre o índice ou contador: </strong>Em situações onde você precisa controlar ou acessar o índice de iteração, como acessar elementos específicos de um array ou pular certos itens, o for oferece o controle necessário através da inicialização e do incremento.</li>
+            </ol>
+            <h3>Exemplo prático</h3>
+            <p>Aqui está um exemplo de como o loop for pode ser usado em JavaScript:</p>
+            <div class="bloco-codigo">
+                <pre>
+                    let numeros = [10, 20, 30, 40, 50];
+ 
+                    // Usando 'for' para iterar sobre o array
+                    for (let i = 0; i &lt; numeros.length; i++) {
+                    console.log(numeros[i]); // Imprime cada número
+                    }
+                </pre>
+            </div>
+            <p>Este código imprime todos os elementos do array numeros. A variável <strong>i</strong> serve como um <strong>índice</strong> para cada elemento do array, começando de 0 e indo até <strong>numeros.length - 1</strong>.</p>
+            <div class="destaque">
+                <p><strong>Conclusão: </strong>O loop for é uma ferramenta essencial em JavaScript para realizar tarefas repetitivas de maneira eficiente e clara. Sua capacidade de definir explicitamente a inicialização, a condição de continuação e o incremento em uma única linha de código facilita a leitura e a manutenção, tornando-o ideal para uma ampla gama de situações de programação onde repetições controladas são necessárias.</p>
+            </div>
+        </section>
+
+        <section class="resumo-section">
+            <h2>Resumo Aula For</h2>
+            <p>O loop for é uma das estruturas de repetição mais fundamentais em JavaScript, essencial para realizar tarefas repetitivas de forma eficiente e clara. Aqui está uma análise detalhada dos exemplos dados, explorando como e por que o for é utilizado.</p>
+            <h3>Estrutura Básica do Loop for</h3>
+            <ol>A estrutura do loop for é composta por três componentes principais:
+                <li><strong>Inicialização: </strong>Define e inicializa o contador. Acontece uma única vez antes do primeiro ciclo começar.</li>
+                <li><strong>Condição: </strong>Avaliada antes de cada iteração. Se verdadeira, o loop continua; se falsa, o loop termina.</li>
+                <li><strong>Incremento: </strong>Atualiza o contador após cada iteração, preparando para a próxima verificação da condição</li>
+            </ol>
+            <h3>Exemplos Práticos</h3>
+            <p><mark>Contando Até 5 -</mark> Este exemplo ilustra o uso básico do for para iterar de 1 a 5:</p>
+            <div class="bloco-codigo">
+                <pre>
+                    for (let i = 1; i <= 5; i++) {
+                        console.log("Número " + i + ": " + i);
+                    }
+                </pre>
+            </div>
+            <ul>Por que usar?
+                <li><strong>Clareza e simplicidade: </strong>O for torna explícito o intervalo de valores que i percorrerá, e o que acontecerá em cada iteração.</li>
+                <li><strong>Controle preciso: </strong>Você controla exatamente quantas vezes o loop será executado, o que é ideal quando o número de iterações é conhecido.</li>
+            </ul>
+            <p><mark>Contagem Regressiva de 5 a 1 - </mark>Este exemplo demonstra uma contagem regressiva, uma variação comum que utiliza decremento no lugar de incremento:</p>
+            <div class="bloco-codigo">
+                <pre>
+                    for (let i = 5; i >= 1; i--) {
+                        console.log("Contagem regressiva " + i + ": " + i);
+                    }
+                </pre>
+            </div>
+            <ul>Por que usar?
+                <li><strong>Flexibilidade: </strong>O for pode ser facilmente ajustado para contagem regressiva, demonstrando sua versatilidade.</li>
+                <li><strong>Controle de fluxo: </strong>Ajustar o controle de loop para decrementar permite reversões ou revisões sequenciais em dados.</li>
+            </ul>
+            <p><mark>Somando Números de 1 a 5 - </mark>Este exemplo mostra como o for pode ser utilizado para somar uma sequência de números:</p>
+            <div class="bloco-codigo">
+                <pre>
+                    let soma = 0;
+
+                    for (let i = 1; i &lt;= 5; i++) {
+                        soma += i;
+                    }
+                    console.log(`A soma dos números de 1 a 5 é: ${soma}`);
+                </pre>
+            </div>
+            <ul>Por que usar?
+                <li><strong>Acumulação: </strong>Ideal para tarefas que requerem acumulação ou agregação de valores, como somar uma série de números.</li>
+                <li><strong>Simplicidade e eficiência: </strong>Elimina a necessidade de estruturas mais complexas ou variáveis adicionais fora do necessário.</li>
+            </ul>
+            <p><mark>For Aninhado para Tabela de Multiplicação - </mark>O for aninhado é usado para criar tabelas ou matrizes de valores calculados:</p>
+            <div class="bloco-codigo">
+                <pre>
+                const tamanhoTabela = 10;
+                for (let i = 1; i &lt;= tamanhoTabela; i++) {
+                    for (let j = 1; j &lt;= tamanhoTabela; j++) {
+                        console.log(i + " x " + j + " = " + (i * j));
+                    }
+                    console.log(); // Linha em branco para separação visual
+                } 
+                </pre>
+            </div>
+            <ul>Por que usar?
+                <li><strong>Cálculos complexos e organizados: </strong>Os loops aninhados são perfeitos para gerar dados em formatos matriciais ou tabelas</li>
+                <li><strong>Visualização clara: </strong>A separação das tabelas de multiplicação facilita a compreensão e a verificação dos resultados.</li>
+            </ul>
+            <div class="destaque">
+                <p><strong>Conclusão: </strong>O loop for é uma ferramenta extremamente versátil em JavaScript, capaz de lidar com uma ampla gama de tarefas que envolvem repetição determinística. Seja iterando sobre números, agregando valores, ou produzindo dados em formatos complexos, o for oferece uma solução clara e eficiente para a maioria das necessidades de looping.</p>
+            </div>
+            
+        </section>
+
+        <section class="resumo-section">
             <div class="destaque-importante">
                 <p><strong>Atenção:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor,
                     nisl eget ultricies tincidunt.</p>
@@ -591,7 +710,7 @@
         </section>
 
         <footer class="resumo-footer">
-            <p>Resumos criados por Lorem Ipsum - © 2023 Todos os direitos reservados</p>
+            <p>Resumos criados por Emilly Andrade - © 2025 Todos os direitos reservados</p>
         </footer>
 
 
